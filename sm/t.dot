@@ -1,0 +1,18 @@
+digraph finite_state_machine {
+	
+	size="8,5"
+rankdir=LR;	 
+
+  
+InitFrame -> readCh
+readCh -> readCh [label = "storeCh"]
+readCh -> frameChk [ label = "Found0x7E" ];
+readCh -> InitFrame [label ="nrChExceeded"]
+frameChk -> dlvFrame  [ label = "frameOk" ];
+dlvFrame ->InitFrame
+frameChk -> InitFrame [label = "frameBad"]
+
+
+
+
+ }
