@@ -1,8 +1,6 @@
 
 #include <stdio.h>
 
-// .
-typedef void *(*pF)(void); // for typecast for calling function
 
 #define NEXT(x,y,z) return (x)
 // States -- you need this forward dcl for the compiler and calling
@@ -13,9 +11,12 @@ typedef void *(*pF)(void); // for typecast for calling function
 //       |-------------- next state we will jump to 
 //
 // all driven from main (or here setup fct)
+
+// NBNB numbers must correspond to location in array ...
 #define LED_ON 0
 #define LED_OFF 1
 #define LED_SAVE 2
+
 int led_on();      // as name indicates ...
 int led_off();
 int led_save();
