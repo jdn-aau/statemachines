@@ -11,4 +11,12 @@ A few comments:
 - consider if more states is better than complex code in state(s)
 - it is possible to track within the main "while (1)" 
 
+
+This one uses an array for holding references to functions. In this way you can easily print out current and next state
+
+
+Missing:
+
+You might need to pass parameters to the functions acting as states
+
 /Jens
