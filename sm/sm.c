@@ -1,12 +1,13 @@
 
 #include <stdio.h>
 
+// .
 typedef void *(*pF)(void); // for typecast for calling function
 
 #define NEXT(x,y,z) return ((void *)x)
 // States -- you need this forward dcl for the compiler and calling
 
-// NEXT(next,here,cond)
+// NEEXT(next,here,cond)   
 //                 |---- condition to be put on the arc in state machine
 //             |-------- state we are in just now (just for graph)
 //       |-------------- next state we will jump to 

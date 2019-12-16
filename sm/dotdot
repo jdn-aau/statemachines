@@ -3,11 +3,10 @@ digraph finite_state_machine {
 	size="8,5"
 	node [shape = circle];
 
-here -> next[label ="cond"];
-led_on -> led_off[label ="always"];
-led_off -> led_on[label ="condition1"];
-led_off -> led_save[label ="cond2"];
-led_save -> led_on[label ="alarm"];
-led_save -> led_off[label ="peace"];
+led_on -> led_off[label ="always",width=2.5,fixedsize=true, regular=true, shape=circle];
+led_off -> led_on[label ="condition1",width=2.5,fixedsize=true, regular=true, shape=circle];
+led_off -> led_save[label ="cond2",width=2.5,fixedsize=true, regular=true, shape=circle];
+led_save -> led_on[label ="alarm",width=2.5,fixedsize=true, regular=true, shape=circle];
+led_save -> led_off[label ="peace",width=2.5,fixedsize=true, regular=true, shape=circle];
 }
 
