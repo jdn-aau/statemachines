@@ -1,0 +1,5 @@
+
+rm -f dotbody
+grep -h "NEXT" *c | grep -v "define" | sed 's/(/,/' |sed 's/)/,/' | awk 'BEGIN {FS= ","} ; {print $3 " -> " $2 "[label =\"" $4 "\",width=2.5,fixedsize=true, regular=true, shape=circle];"}' >> dotbody
+cat dothead dotbody dottail > dotdot
+dot -Tpng dotdot -o dotdot.png

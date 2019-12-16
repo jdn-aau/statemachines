@@ -1,0 +1,5 @@
+LED_ON -> LED_OFF[label ="always",width=2.5,fixedsize=true, regular=true, shape=circle];
+LED_OFF -> LED_ON[label ="condition1",width=2.5,fixedsize=true, regular=true, shape=circle];
+LED_OFF -> LED_SAVE[label ="cond2",width=2.5,fixedsize=true, regular=true, shape=circle];
+LED_SAVE -> LED_ON[label ="alarm",width=2.5,fixedsize=true, regular=true, shape=circle];
+LED_SAVE -> LED_OFF[label ="peace",width=2.5,fixedsize=true, regular=true, shape=circle];
